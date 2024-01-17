@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        >
+        
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            android:id="@+id/collapsible_toolbar"
+            >
+
+    <LinearLayout
+        android:id="@+id/appsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/searchview_background"
+            app:queryHint="Search" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/orange"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/line1Button1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="7dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:padding="1dp"
+                android:background="@drawable/button_background_white"
+                android:foreground="@drawable/button_background"
+                android:src="@drawable/chatgpt_icon" />
+
+            <ImageButton
+                android:id="@+id/line1Button2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="7dp"
+                android:adjustViewBounds="true"
+                android:padding="5dp"
+                android:background="@drawable/button_background_white"
+                android:foreground="@drawable/button_background"
+                android:scaleType="fitCenter"
+                android:src="@drawable/google_icon" />
+
+            <ImageButton
+                android:id="@+id/line1Button3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="7dp"
+                android:adjustViewBounds="true"
+                android:padding="2dp"
+                android:background="@drawable/button_background_white"
+                android:foreground="@drawable/button_background"
+                android:scaleType="fitCenter"
+                android:src="@drawable/instagram_logo" />
+
+            <ImageButton
+                android:id="@+id/line1Button4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="7dp"
+                android:padding="2dp"
+                android:scaleType="fitCenter"
+                android:background="@drawable/button_background_white"
+                android:foreground="@drawable/button_background"
+                android:src="@drawable/linkedin_icon" />
+
+            <ImageButton
+                android:id="@+id/line1Button5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="7dp"
+                android:background="@drawable/button_background_white"
+                android:foreground="@drawable/button_background"
+                android:padding="2dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/facebook_logo" />
+
+            <ImageButton
+                android:id="@+id/line1Button6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="7dp"
+                android:background="@drawable/button_background_white"
+                android:foreground="@drawable/button_background"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/udemy_logo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/line2Button1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="7dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/button_background_white"
+                android:foreground="@drawable/button_background"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/imdb_logo" />
+
+            <ImageButton
+                android:id="@+id/line2Button2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="7dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:padding="5dp"
+                android:background="@drawable/button_background_white"
+                android:foreground="@drawable/button_background"
+                android:src="@drawable/shayaripoetry_icon" />
+
+            <ImageButton
+                android:id="@+id/line2Button3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="7dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:padding="8dp"
+                android:background="@drawable/button_background_white"
+                android:foreground="@drawable/button_background"
+                android:src="@drawable/flipkart_logo" />
+
+            <ImageButton
+                android:id="@+id/line2Button4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="7dp"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:background="@drawable/button_background_white"
+                android:foreground="@drawable/button_background"
+                android:src="@drawable/amazon_logo" />
+
+            <ImageButton
+                android:id="@+id/line2Button5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="7dp"
+                android:background="@drawable/button_background_white"
+                android:foreground="@drawable/button_background"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/wikipedia_logo" />
+
+            <ImageButton
+                android:id="@+id/line2Button6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="7dp"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:background="@drawable/button_background_white"
+                android:foreground="@drawable/button_background"
+                android:src="@drawable/myntra_logo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/green"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/line3Button1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="7dp"
+                android:padding="7dp"
+                android:scaleType="fitCenter"
+                android:background="@drawable/button_background_white"
+                android:foreground="@drawable/button_background"
+                android:src="@drawable/tinder_logo" />
+
+            <ImageButton
+                android:id="@+id/line3Button2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="7dp"
+                android:padding="1dp"
+                android:scaleType="fitCenter"
+                android:background="@drawable/button_background_white"
+                android:foreground="@drawable/button_background"
+                android:src="@drawable/twitter_logo" />
+
+            <ImageButton
+                android:id="@+id/line3Button3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="7dp"
+                android:padding="7dp"
+                android:scaleType="fitCenter"
+                android:background="@drawable/button_background_white"
+                android:foreground="@drawable/button_background"
+                android:src="@drawable/youtube_logo" />
+
+            <ImageButton
+                android:id="@+id/line3Button4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="7dp"
+                android:background="@drawable/button_background_white"
+                android:foreground="@drawable/button_background"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sarkariresult_logo" />
+
+            <ImageButton
+                android:id="@+id/line3Button5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="7dp"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:background="@drawable/button_background_white"
+                android:foreground="@drawable/button_background"
+                android:src="@drawable/olx_logo" />
+
+            <ImageButton
+                android:id="@+id/line3Button6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="7dp"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:background="@drawable/button_background_white"
+                android:foreground="@drawable/button_background"
+                android:src="@drawable/teazytech_logo" />
+
+        </LinearLayout>
+    </LinearLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nestedScrollView"
+        android:layout_gravity="fill_vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <WebView
+            android:id="@+id/newsWeb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+</LinearLayout>

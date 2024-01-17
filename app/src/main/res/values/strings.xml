@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Hindustani Browser Pro</string>
+    <string name="app_name1">Hindustani Browser</string>
+    <string name="app_name2">Pro</string>
+    <string name="mainURL">https://www.google.com/search?q=</string>
+    <string name="newsURL">https://news.google.com/topics/</string>
+    <string name="l1Button1URL">https://chat.openai.com/</string>
+    <string name="l1Button2URL">https://www.google.com/</string>
+    <string name="l1Button3URL">https://www.instagram.com/</string>
+    <string name="l1Button4URL">https://www.linkedin.com/</string>
+    <string name="l1Button5URL">https://www.facebook.com/</string>
+    <string name="l1Button6URL">https://www.udemy.com/</string>
+    <string name="l2Button1URL">https://www.imdb.com/</string>
+    <string name="l2Button2URL">https://www.shayaripoetry.in/</string>
+    <string name="l2Button3URL">https://www.flipkart.com/</string>
+    <string name="l2Button4URL">https://www.amazon.in/</string>
+    <string name="l2Button5URL">https://www.wikipedia.org/</string>
+    <string name="l2Button6URL">https://www.myntra.com/</string>
+    <string name="l3Button1URL">https://tinder.com/</string>
+    <string name="l3Button2URL">https://www.twitter.com/</string>
+    <string name="l3Button3URL">https://www.youtube.com/</string>
+    <string name="l3Button4URL">https://www.sarkariresult.com/</string>
+    <string name="l3Button5URL">https://www.olx.in</string>
+    <string name="l3Button6URL">https://www.teazytech.com/</string>
+</resources>
